@@ -1,0 +1,17 @@
+{
+  "name": "gasosa",
+  "version": "1.0.0",
+  "description": "Um aplicativo iOS que te ajuda a tomar a decisão mais inteligente na hora de abastecer seu carro flex. Compare rapidamente os preços do álcool e da gasolina e descubra qual a opção mais econômica para o seu veículo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
+

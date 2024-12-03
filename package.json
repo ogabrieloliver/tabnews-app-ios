@@ -4,7 +4,10 @@
   "description": "Um aplicativo iOS que te ajuda a tomar a decisão mais inteligente na hora de abastecer seu carro flex. Compare rapidamente os preços do álcool e da gasolina e descubra qual a opção mais econômica para o seu veículo.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
